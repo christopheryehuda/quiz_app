@@ -8,6 +8,12 @@ class Breakpoints {
 
   /// Lebar maksimal konten agar tidak melebar di tablet/web.
   static const double maxContentWidth = 600;
+
+  /// Lebar minimal untuk tata letak dua kolom (tablet/web).
+  static const double wide = 720;
+
+  /// Lebar maksimal konten pada tata letak dua kolom.
+  static const double maxWideWidth = 1000;
 }
 
 extension ResponsiveContext on BuildContext {
