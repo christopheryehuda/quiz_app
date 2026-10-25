@@ -9,6 +9,7 @@ import '../providers/quiz_provider.dart';
 import '../widgets/custom_button.dart';
 import '../widgets/responsive_center.dart';
 import '../widgets/theme_toggle_button.dart';
+import 'quiz_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -49,9 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
     quiz.setUserName(_nameController.text);
     quiz.restartQuiz();
 
-    // SEMENTARA: navigasi ke halaman kuis ditambahkan di Tahap 5.
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Halo, ${quiz.userName}! Halaman kuis menyusul.')),
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const QuizScreen()),
     );
   }
 
