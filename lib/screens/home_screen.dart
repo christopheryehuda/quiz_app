@@ -123,6 +123,8 @@ class _HomeScreenState extends State<HomeScreen> {
         SizedBox(height: context.sp(16)),
         Text(
           AppStrings.appName,
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: context.sp(30),
@@ -156,7 +158,6 @@ class _HomeScreenState extends State<HomeScreen> {
           TextFormField(
             controller: _nameController,
             validator: _validateName,
-            maxLength: 20,
             textCapitalization: TextCapitalization.words,
             textInputAction: TextInputAction.done,
             onFieldSubmitted: (_) => _startQuiz(),
@@ -164,7 +165,6 @@ class _HomeScreenState extends State<HomeScreen> {
             decoration: InputDecoration(
               labelText: AppStrings.inputNameLabel,
               hintText: AppStrings.inputNameHint,
-              counterText: '',
               prefixIcon: const Icon(Icons.person_rounded),
               filled: true,
               fillColor: scheme.surface,
