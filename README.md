@@ -42,13 +42,13 @@ Flutter, Dart, Provider, font Poppins.
 |---|--------------------------------------------------|
 | ![Home Light](docs/screenshots/01-home-light.jpeg) | ![Home Dark](docs/screenshots/02-home-dark.jpeg) |
 
-| Kuis                                   | Kuis (dijawab) |
-|----------------------------------------|---|
-| ![Kuis](docs/screenshots/03-quiz.jpeg) | ![Kuis dijawab](docs/screenshots/04-quiz-answered.png) |
+| Kuis                                   | Kuis (dijawab)                                          |
+|----------------------------------------|---------------------------------------------------------|
+| ![Kuis](docs/screenshots/03-quiz.jpeg) | ![Kuis dijawab](docs/screenshots/04-quiz-answered.jpeg) |
 
-| Hasil | Tampilan Tablet/Web |
-|---|---|
-| ![Hasil](docs/screenshots/05-result.png) | ![Tablet Web](docs/screenshots/06-web.png) |
+| Hasil                                     | Tampilan Tablet/Web |
+|-------------------------------------------|---|
+| ![Hasil](docs/screenshots/05-result.jpeg) | ![Tablet Web](docs/screenshots/06-web.png) |
 
 ### Mockup / Prototype
 [Lihat di Figma](ISI_LINK_FIGMA)
