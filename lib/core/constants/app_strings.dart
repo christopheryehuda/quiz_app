@@ -10,4 +10,5 @@ class AppStrings {
   static const String finish = 'Selesai';
   static const String resultTitle = 'Hasil Kuis';
   static const String playAgain = 'Main Lagi';
+  static const String backToHome = 'Kembali ke Beranda';
 }
