@@ -1,20 +1,20 @@
 # QuizMaster
 
-## Identitas Mahasiswa
-| **Nama** | ISI_NAMA_LENGKAP |
-| **NIM** | ISI_NIM |
-| **Lab** | ISI_LAB |
+##  A. Identitas Mahasiswa
+Nama : Christopher Yehuda Panjaitan
+NIM : 241401118
+Lab : 2 
 
-## Informasi Aplikasi
+## B. Informasi Aplikasi
 
 ### Nama Aplikasi
 QuizMaster
 
-### Deskripsi Singkat
-QuizMaster adalah aplikasi kuis pilihan ganda bertema pemrograman Flutter. Pengguna memasukkan nama, menjawab 10 pertanyaan satu per satu, lalu melihat skor akhir beserta namanya.
+### Deskripsi Singkat Aplikasi
+QuizMaster adalah aplikasi kuis pilihan ganda. Pengguna memasukkan nama, menjawab 10 pertanyaan satu per satu, lalu melihat skor akhir beserta namanya.
 
 ### Fitur
-- Input nama dengan validasi (tidak boleh kosong, minimal 2 karakter).
+- Input nama (tidak boleh kosong, minimal 2 karakter).
 - 10 pertanyaan pilihan ganda dari data dummy lokal dalam satu list (tanpa database).
 - Posisi pilihan jawaban diacak setiap kuis dimulai atau diulang.
 - Umpan balik langsung: jawaban benar ditandai hijau, jawaban salah merah, dan jawaban terkunci setelah dipilih.
@@ -29,27 +29,6 @@ QuizMaster adalah aplikasi kuis pilihan ganda bertema pemrograman Flutter. Pengg
 ### Teknologi
 Flutter, Dart, Provider, font Poppins.
 
-### Struktur Proyek
-```
-lib/
-├── main.dart
-├── core/
-│   ├── constants/   # path aset dan teks
-│   ├── theme/       # warna dan tema light/dark
-│   └── utils/       # helper ukuran responsif
-├── data/            # dummy_questions.dart (seluruh pertanyaan)
-├── models/          # question.dart
-├── providers/       # quiz_provider.dart, theme_provider.dart
-├── screens/         # home, quiz, result
-└── widgets/         # reusable widgets
-```
-
-### Cara Menjalankan
-```bash
-flutter pub get
-flutter run
-```
-
 ## Dokumentasi
 
 ### Credit Aset
@@ -59,7 +38,6 @@ flutter run
 - **Pertanyaan kuis**: ditulis sendiri.
 
 ### Screenshot
-
 | Home (Light) | Home (Dark) |
 |---|---|
 | ![Home Light](docs/screenshots/01-home-light.png) | ![Home Dark](docs/screenshots/02-home-dark.png) |
