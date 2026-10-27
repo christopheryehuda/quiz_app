@@ -38,17 +38,17 @@ Flutter, Dart, Provider, font Poppins.
 - **Pertanyaan kuis**: ditulis sendiri.
 
 ### Screenshot
-| Home (Light) | Home (Dark) |
+| Home (Light) | Home (Dark)                                      |
+|---|--------------------------------------------------|
+| ![Home Light](docs/screenshots/01-home-light.jpeg) | ![Home Dark](docs/screenshots/02-home-dark.jpeg) |
 
-Home Light : (docs/screenshots/01-home-light.png) | ![Home Dark](docs/screenshots/02-home-dark.png) |
-
-| Kuis | Kuis (dijawab) |
-|---|---|
-| ![Kuis](docs/screenshots/03-quiz.png) | ![Kuis dijawab](docs/screenshots/04-quiz-answered.png) |
+| Kuis                                   | Kuis (dijawab) |
+|----------------------------------------|---|
+| ![Kuis](docs/screenshots/03-quiz.jpeg) | ![Kuis dijawab](docs/screenshots/04-quiz-answered.png) |
 
 | Hasil | Tampilan Tablet/Web |
 |---|---|
-| ![Hasil](docs/screenshots/05-result.png) | ![Tablet Web](docs/screenshots/06-tablet-web.png) |
+| ![Hasil](docs/screenshots/05-result.png) | ![Tablet Web](docs/screenshots/06-web.png) |
 
 ### Mockup / Prototype
 [Lihat di Figma](ISI_LINK_FIGMA)
