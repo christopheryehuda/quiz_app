@@ -4,11 +4,12 @@ import '../models/question.dart';
 
 class QuizProvider extends ChangeNotifier {
   QuizProvider({List<Question>? questions})
-      : _questions = questions ?? dummyQuestions {
-    _answers = List<int?>.filled(_questions.length, null);
+      : _source = questions ?? dummyQuestions {
+    _prepareQuiz();
   }
 
-  final List<Question> _questions;
+  final List<Question> _source; // data asli, urutan opsi tetap
+  late List<Question> _questions; // salinan dengan opsi diacak per sesi kuis
   late List<int?> _answers; // jawaban terpilih per soal, null = belum dijawab
   String _userName = '';
   int _currentIndex = 0;
@@ -40,6 +41,13 @@ class QuizProvider extends ChangeNotifier {
       totalQuestions == 0 ? 0 : (score * 100 / totalQuestions).round();
 
   // ---------- Aksi ----------
+  /// Menyiapkan sesi kuis baru: acak opsi tiap soal dan kosongkan jawaban.
+  void _prepareQuiz() {
+    _questions = [for (final q in _source) q.shuffled()];
+    _answers = List<int?>.filled(_questions.length, null);
+    _currentIndex = 0;
+  }
+
   void setUserName(String name) {
     _userName = name.trim();
     notifyListeners();
@@ -57,10 +65,9 @@ class QuizProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Ulangi kuis, nama pengguna tetap tersimpan.
+  /// Ulangi kuis dengan susunan opsi baru, nama pengguna tetap tersimpan.
   void restartQuiz() {
-    _answers = List<int?>.filled(_questions.length, null);
-    _currentIndex = 0;
+    _prepareQuiz();
     notifyListeners();
   }
 
