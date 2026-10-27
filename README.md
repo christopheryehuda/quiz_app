@@ -39,8 +39,8 @@ Flutter, Dart, Provider, font Poppins.
 
 ### Screenshot
 | Home (Light) | Home (Dark) |
-|---|---|
-| ![Home Light](docs/screenshots/01-home-light.png) | ![Home Dark](docs/screenshots/02-home-dark.png) |
+
+Home Light : (docs/screenshots/01-home-light.png) | ![Home Dark](docs/screenshots/02-home-dark.png) |
 
 | Kuis | Kuis (dijawab) |
 |---|---|
